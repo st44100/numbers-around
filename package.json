@@ -1,5 +1,5 @@
 {
-  "name": "numbers-around",
+  "name": "@st44100/numbers-around",
   "version": "0.0.0",
   "description": "Get Numbers Around",
   "main": "index.js",
