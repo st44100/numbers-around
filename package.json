@@ -1,7 +1,7 @@
 {
-  "name": "number-around",
+  "name": "numbers-around",
   "version": "0.0.0",
-  "description": "Number Around",
+  "description": "Get Numbers Around",
   "main": "index.js",
   "scripts": {
     "build": "tsc",

@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
  * @param range numbers of number that add both side;
  * @return Array of Numbers;
  */
-function numberAround(center, range, min, max) {
+function numbersAround(center, range, min, max) {
     if (min === void 0) { min = 0; }
     var result = [];
     var leftIndex = center - range;
@@ -30,4 +30,4 @@ function numberAround(center, range, min, max) {
     }
     return result;
 }
-exports.default = numberAround;
+exports.default = numbersAround;
