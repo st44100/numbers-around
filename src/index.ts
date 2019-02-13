@@ -11,14 +11,12 @@ export default function numbersAround(center: number, range: number, min: number
   const rightIndex = center + range;
 
   let rangeLeft = leftIndex < min ? min : leftIndex;
-  let rangeRight = rightIndex > max ? max : rightIndex;
+  let rangeRight = (max && rightIndex > max) ? max : rightIndex;
 
   if (leftIndex !== rangeLeft) {
     rangeRight += rangeLeft - leftIndex;
-  }
-
-  if (rightIndex !== rangeRight) {
-    rangeLeft -= rangeRight - leftIndex;
+  } else if (rightIndex !== rangeRight) {
+    rangeLeft -= rightIndex - rangeRight;
   }
 
   for (let i = rangeLeft; i <= rangeRight; i++) {
