@@ -2,7 +2,7 @@
   "name": "@st44100/numbers-around",
   "version": "0.0.0",
   "description": "Get Numbers Around",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
     "test": "jest"
